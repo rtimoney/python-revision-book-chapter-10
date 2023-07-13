@@ -15,6 +15,10 @@ class bird :
     def talk(self) :
         return self.sound
 
+
+
+
+
 # incomplete - to be continued
 
 
