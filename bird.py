@@ -1,15 +1,16 @@
 # CHAPTER 10 - PROGRAMMING OBJECTS
 # PAGE 128
-# COPYING INSTANCES
+# COPYING INSTANCES - Bird exapmle
 
-class bird :
+class Bird :
     "A class to define bird properties."
 
     count = 0
 
-    def _init_(self , chat) :
+    def __init__(self , chat) :
         self.sound = chat
-        bird.count += 1
+        
+        Bird.count += 1
 
 
     def talk(self) :
