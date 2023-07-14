@@ -2,6 +2,7 @@
 # PAGE 132
 # DERIVING CLASSES - Shape example 
 
+# declare a base class with two class variables and a method to set their values
 class Polygon :
     "A class to define Polygon properties."
 
