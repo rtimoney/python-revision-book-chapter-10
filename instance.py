@@ -8,17 +8,31 @@ from Bird import *
 # display the document string for the Bird class
 print ('\nClass instances of:\n', Bird.__doc__)
 
-# create an instance of Bird and pass a string argument to its variable
-polly = Bird('Squawk, squawk!')
+# create an instance of the class then add a new attribute with an assigned value using dot notation
+chick = Bird('Cheep, cheep!')
+chick.age = '1 week'
 
-# display the variable value and call the class method to display the common class variable value
-print('\nNumber of Birds:', Bird.count)
-print('Polly says:', polly.talk())
+# display the values in both variable attributes
+print('\nChick says:', chick.talk())
+print('Chick age:', chick.age)
 
-# create a second instance of the class passing a different string argument value to its variable
-harry = Bird('Tweet, tweet!')
+# modify the age attribute using dot notation and display the new value
+chick.age = '2 weeks'
+print('\nChick now:', chick.age)
 
-# display this variable value and call the class method to display the common class variable value
-print('\nNumber of Birds:', Bird.count)
-print('Harry says:', harry.talk())
+# modify the age attribute again using a built in function
+setattr(chick , 'age', '3 weeks')
+
+# display a list of all non-private insurance attributes and their respective values using a built-in function
+print('\nChick attributes...')
+for attrib in dir(chick) :
+    if attrib[0] != '_' :
+        print(attrib , ':', getattr(chick,attrib))
+
+# remove the age attribute
+delattr(chick , 'age')
+# confirm its removal using a built-in function
+print('Chick age attribute? :', hasattr(chick,'age'))
+
+
 
