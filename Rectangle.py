@@ -9,4 +9,4 @@ class Rectangle(Polygon) :
     "A class to define Rectangle properties."
 
     def area(self) :
-       return(self.width * self.height)/2
+       return(self.width * self.height)

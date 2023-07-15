@@ -10,9 +10,9 @@ class Polygon :
     length = 0
 
 
-    def set_values(self , width , length) :
+    def set_values(self , width , height) :
         self.width = width
-        self.length = length
+        self.height = height
        
 
 

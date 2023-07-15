@@ -9,5 +9,12 @@ git add .
 git commit -m "First upload 14th July 2023 - Ronan"
 git push 
 
+Push to gitlab
+cd /c/users/ronan/downloads/python-revision-book-chapter-10
+git init -b main
+git add .
+git commit -m "Updates 15th July 2023 - Ronan"
+git push 
+
 
 
